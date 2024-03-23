@@ -45,11 +45,23 @@ layout: base
     <ul class="paginationPages">
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <li><div>{{ page }}</div></li>
+        <li>
+          <div>
+            <span>{{ page }}</span>
+          </div>
+        </li>
       {% elsif page == 1 %}
-        <li><div><a href="{{ '/blog' | relative_url }}">{{ page }}</a></div></li>
+        <li>
+          <div class="pageLinkActive">
+            <a href="{{ '/blog' | relative_url }}">{{ page }}</a>
+          </div>
+        </li>
       {% else %}
-        <li><div><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></div></li>
+        <li>
+          <div class="pageLinkActive">
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+          </div>
+        </li>
       {% endif %}
     {% endfor %}
     </ul>

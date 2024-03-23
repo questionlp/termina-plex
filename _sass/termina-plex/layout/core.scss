@@ -22,27 +22,35 @@ body {
 }
 
 .pagination {
-  margin-top: $spacingUnit * 1.5;
+  padding: $spacingUnit 0 $spacingUnit * 0.75 0;
   text-align: center;
 
   .paginationPages {
+    clear: both;
+
     li {
       list-style-type: none;
       margin: $spacingUnit * 0.25;
       display: inline-flex;
 
-      a {
-        border: none;
-        padding: 0;
-      }
-
       div {
         min-width: 3em;
         font-size: 120%;
-        padding: $spacingUnit * 0.5;
         background-color: var(--header-background-color);
         text-align: center;
         box-sizing: border-box;
+
+        span, a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          padding: $spacingUnit * 0.5 0;
+          text-decoration: none;
+        }
+      }
+
+      div.pageLinkActive:hover {
+        background-color: rgba(127, 127, 127, 0.25);
       }
     }
   }
