@@ -48,7 +48,6 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
 </html>
 ```
 
-
 In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
 
 #### You might want a sub-subheading (h4)
@@ -87,8 +86,6 @@ In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla e
 3. Third item, what what?!
 4. Fourth item, fo sheezy my neezy
 
-
-
 ## Headings are cool! (h2)
 
 Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
@@ -105,7 +102,6 @@ lorem                 | lorem ipsum           | lorem ipsum dolor     | lorem ip
 lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
 lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
 lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
-
 
 Title 1 | Title 2 | Title 3 | Title 4
 --- | --- | --- | ---
