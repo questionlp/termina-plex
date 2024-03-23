@@ -30,11 +30,11 @@
   height: 100%;
 
   @media only screen and (min-width: $breakLarge) {
-    width: $width;
+    width: $widthLarge;
   }
 
   @media screen and (max-width: $breakLarge) {
-    width: 92%;
+    width: $widthSmaller;
   }
 }
 
