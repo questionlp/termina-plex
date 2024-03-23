@@ -44,8 +44,8 @@ termina-plex:
   hostname: termina-plex
 
   header_links:
-    - { name: about, url: "/about" }
-    - { name: blog, url: "/blog" }
+    - { name: About, url: "/about" }
+    - { name: Blog, url: "/blog" }
 
   social_links:
     - { name: GitHub, url: "https://github.com/questionlp/termina-plex" }
