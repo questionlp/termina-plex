@@ -12,8 +12,9 @@ $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 // Content
-$breakLarge:       960px;
-$width:            800px;
+$breakLarge:       992px;
+$widthLarge:       88%;
+$widthSmaller:     92%;
 $spacingUnit:      30px !default;
 
 @import "termina-plex/ibm-plex";
