@@ -8,7 +8,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: $width;
+
+  @media only screen and (min-width: $breakLarge) {
+    width: $widthLarge * 0.8;
+  }
+
+  @media screen and (max-width: $breakLarge) {
+    width: $widthSmaller;
+  }
 }
 
 .headerWrapper {
