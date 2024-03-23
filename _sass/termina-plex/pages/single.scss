@@ -43,6 +43,7 @@ dt::after {
   background-color: var(--header-background-color);
   margin: 0;
   padding: $spacingUnit * 0.6667;
+  overflow-y: scroll;
 }
 
 .pageNavFooter {

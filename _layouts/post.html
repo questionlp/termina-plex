@@ -27,7 +27,7 @@ layout: base
       <dd>
         {%- for category in page.categories -%}
           {%- capture category_name -%}{{ category }}{%- endcapture -%}
-          <a href="{{ site.baseurl | append:'/category/' | append:category_name }}">#{{ category }}</a>
+          <a href="{{ site.baseurl | append:'/category/' | append:category_name }}">#{{ category }}</a>&nbsp;
         {%- endfor -%}
       </dd>
       {%- endif -%}
@@ -36,7 +36,7 @@ layout: base
       <dd>
         {%- for tag in page.tags -%}
           {%- capture tag_name -%}{{ tag }}{%- endcapture -%}
-          <a href="{{ site.baseurl | append:'/tag/' | append:tag_name }}">#{{ tag }}</a>
+          <a href="{{ site.baseurl | append:'/tag/' | append:tag_name }}">#{{ tag }}</a>&nbsp;
         {%- endfor -%}
       </dd>
       {%- endif -%}
