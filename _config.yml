@@ -16,11 +16,11 @@ permalink: pretty
 # paginate_path: "/blog/page:num"
 
 # If you clone the Termina Plex repo and build locally, use this setting.
-theme: termina-plex
+# theme: termina-plex
 
 # If you want to use this theme for sites hosted using GitHub Pages, use the following setting and
 # add a line comment on "theme: termina-plex" above.
-# remote_theme: questionlp/termina-plex
+remote_theme: questionlp/termina-plex
 
 plugins:
   - jekyll-feed
