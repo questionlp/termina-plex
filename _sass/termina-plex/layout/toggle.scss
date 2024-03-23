@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+// Layout: Theme/Scheme Toggle
+#theme-toggle {
+  vertical-align: sub;
+}
+
+[data-theme-controls] {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+button.color-scheme-toggle {
+  all: unset;
+  display: revert;
+}
+
+.color-scheme-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--space-xs);
+  cursor: pointer;
+}
+.color-scheme-toggle .light {
+  display: block;
+}
+.color-scheme-toggle .dark {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .color-scheme-toggle .light {
+    display: none;
+  }
+  .color-scheme-toggle .dark {
+    display: block;
+  }
+}
+[data-color-scheme=light] .color-scheme-toggle .light {
+  display: block;
+}
+[data-color-scheme=light] .color-scheme-toggle .dark {
+  display: none;
+}
+[data-color-scheme=dark] .color-scheme-toggle .light {
+  display: none;
+}
+[data-color-scheme=dark] .color-scheme-toggle .dark {
+  display: block;
+}
+.color-scheme-toggle:active {
+  transform: translateY(1px);
+}
+.color-scheme-toggle:focus-visible {
+  outline: 2px dashed var(--color-secondary);
+  outline-offset: var(--outline-offset);
+}
+
+.color-scheme-toggle .focus-arrows {
+  display: none;
+  position: absolute;
+  bottom: -0.6em;
+  left: 100%;
+  color: var(--color-secondary);
+  transform: translateX(50%) rotate(45deg);
+  pointer-events: none;
+}
+
+.color-scheme-toggle:focus-visible .focus-arrows {
+  display: block;
+}

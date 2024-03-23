@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// Layout: Core
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: #{$body-font-family};
+  font-size: #{$base-font-size};
+  font-weight: #{$base-font-weight};
+  line-height: #{$base-line-height};
+  margin: 0;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.pagination {
+  margin-top: $spacingUnit * 1.5;
+  text-align: center;
+
+  .paginationPages {
+    li {
+      list-style-type: none;
+      margin: $spacingUnit * 0.25;
+      display: inline-flex;
+
+      a {
+        border: none;
+        padding: 0;
+      }
+
+      div {
+        min-width: 3em;
+        font-size: 120%;
+        padding: $spacingUnit * 0.5;
+        background-color: var(--header-background-color);
+        text-align: center;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+---
+layout: base
+---
+{%- assign date_format = site.termina-plex.date_format | default: "%d %b %Y" -%}
+
+<article class="postWrapper">
+  <header class="postHeader">
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+
+  <section class="postMetadata">
+    <dl>
+      {%- if page.categories and page.categories.size > 0 -%}
+      <dt>categories</dt>
+      <dd>
+        {%- for category in page.categories -%}
+          {%- capture category_name -%}{{ category }}{%- endcapture -%}
+          <a href="{{ site.baseurl | append:'/category/' | append:category_name }}">#{{ category }}</a>
+        {%- endfor -%}
+      </dd>
+      {%- endif -%}
+      {%- if page.tags and page.tags.size > 0 -%}
+      <dt>tags</dt>
+      <dd>
+        {%- for tag in page.tags -%}
+          {%- capture tag_name -%}{{ tag }}{%- endcapture -%}
+          <a href="{{ site.baseurl | append:'/tag/' | append:tag_name }}">#{{ tag }}</a>
+        {%- endfor -%}
+      </dd>
+      {%- endif -%}
+
+      {%- if page.date -%}
+      <dt>published</dt>
+      <dd>
+        <time class="postDate" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: date_format }}</time>
+      </dd>
+      {%- endif -%}
+    </dl>
+  </section>
+
+  <div>
+    {{ content }}
+  </div>
+</article>
+
+{%- if page.previous or page.next -%}
+<div class="pageNavFooter">
+  {%- if page.previous -%}
+  <div class="pagePrevious">
+    <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+  </div>
+  {%- endif -%}
+
+  {%- if page.next -%}
+  <div class="pageNext">
+    <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+  </div>
+  {%- endif -%}
+</div>
+{%- endif -%}

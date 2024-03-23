@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+
+  <body>
+    <div class="flexWrapper">
+      {%- include header.html -%}
+
+      <div class="content vertical">
+        <main class="main">
+          <div class="indexWrapper">
+            <div>
+              <h1 class="indexHeader">{{ site.author.name }}</h1>
+            </div>
+            {%- if site.termina-plex.social_links -%}
+            <div class="socialNavbar">
+              <ul>
+                {%- for link in site.termina-plex.social_links -%}
+                  {%- if link.rel -%}
+                  <li>
+                    <a href="{{ link.url }}" rel="{{ link.rel }}">{{ link.name }}</a>
+                  </li>
+                  {%- else -%}
+                  <li>
+                    <a href="{{ link.url }}">{{ link.name }}</a>
+                  </li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            </div>
+            {%- endif -%}
+          </div>
+        </main>
+      </div>
+
+      {%- include footer.html -%}
+    </div>
+
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  </body>
+</html>

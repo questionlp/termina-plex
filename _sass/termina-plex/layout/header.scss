@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+// Layout: Header
+.header {
+  font-family: $header-font-family;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $width;
+}
+
+.headerWrapper {
+  background-color: var(--header-background-color);
+  font-family: #{$code-font-family};
+  overflow: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.headerLinks {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline;
+      margin: 5px;
+
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.terminal,
+.terminal:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  display: none;
+  padding: 10px 4px;
+}
+
+.hamb-line {
+  background: var(--text-color);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+/* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+  background: var(--text-color);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.hamb-line::before {
+  top: 5px;
+}
+
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked~.headerLinks {
+  max-height: 100%;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked~.hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .headerLinks {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: var(--background-color);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .hamb {
+    display: block;
+  }
+}
+
+div#theme-toggle {
+  margin: 0;
+  padding: 0;
+  font-size: 125%;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+}

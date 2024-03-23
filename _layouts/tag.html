@@ -1,0 +1,25 @@
+---
+layout: base
+---
+{%- assign date_format = site.termina-plex.date_format | default: "%d %b %Y" -%}
+
+<article class="postWrapper">
+  <header class="postHeader">
+    <h1>Tag: {{ page.tag }}</h1>
+  </header>
+
+  <div class="postsEntries">
+  {%- if site.tags[page.tag] -%}
+    {%- for post in site.tags[page.tag] %}
+    <div class="postInfo">
+      <h2 class="postTitle">
+        <a class="postListLink" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h2>
+      {%- if post.date -%}
+      <time class="postDate" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: date_format }}</time>
+      {%- endif -%}
+    </div>
+    {%- endfor -%}
+  {%- endif -%}
+  </div>
+</article>

@@ -1,0 +1,58 @@
+---
+layout: base
+---
+{%- if site.paginate -%}
+    {%- assign posts = paginator.posts -%}
+  {%- else -%}
+    {%- assign posts = site.posts -%}
+{% endif %}
+{%- assign date_format = site.termina-plex.date_format | default: "%d %b %Y" -%}
+
+<article class="postWrapper">
+  <header class="postHeader">
+    <h1>Blog Posts</h1>
+  </header>
+
+  {%- if posts.size > 0 -%}
+  <div class="postsEntries">
+    {%- for post in posts -%}
+    <div class="postInfo">
+      <h2 class="postTitle">
+        <a class="postListLink" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h2>
+      {%- if post.date -%}
+      <time class="postDate" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: date_format }}</time>
+      {%- endif -%}
+      {%- if site.show_excerpts -%}
+      <div class="postExcerpt">
+        {{ post.excerpt }}
+      </div>
+        {%- if post.content.size > post.excerpt.size -%}
+        <div>
+          <a href="{{ post.url | relative_url }}">(Read more...)</a>
+        </div>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+</article>
+
+{% if site.paginate %}
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    <ul class="paginationPages">
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li><div>{{ page }}</div></li>
+      {% elsif page == 1 %}
+        <li><div><a href="{{ '/blog' | relative_url }}">{{ page }}</a></div></li>
+      {% else %}
+        <li><div><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></div></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+{%- endif %}

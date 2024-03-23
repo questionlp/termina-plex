@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// Pages: Index
+.indexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.indexHeader {
+  font-size: 3em;
+}

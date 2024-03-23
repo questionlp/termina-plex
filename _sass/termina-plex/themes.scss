@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+// Set color scheme/theme colors
+:where(html) {
+  // Base Colors for Light Mode
+  --background-color: #f4f4f4;
+  --text-color: #000000;
+  --title-text-color: #000000;
+
+  --header-background-color: #e0e0e0;
+  --nav-background-color: #e0e0e0;
+  --footer-background-color: #e0e0e0;
+  --code-background-color: #e0e0e0;
+  --border-color-01: #e0e0e0;
+  --border-color-02: #e0e0e0;
+  --border-color-03: #e0e0e0;
+
+  --table-background-color: #f4f4f4;
+  --table-border-color: #e0e0e0;
+  --table-header-background-color: #e0e0e0;
+  --table-header-border-color: #e0e0e0;
+  --table-text-color: #000000;
+  --table-zebra-color: #ffffff;
+
+  --table-border-color: #e0e0e0;
+  --table-text-color: #000000;
+
+  --link-color: #0043ce;
+  --link-active-color: #0043ce;
+  --link-hover-color: #0043ce;
+  --link-visited-color: #0043ce;
+
+  // Highlight Colors for Light Mode
+  --highlight-c:     #998; // Comment
+  --highlight-err:   #a61717; // Error
+  --highlight-err-bg: #e3d2d2; // Error
+  --highlight-k:     inherit; // Keyword
+  --highlight-o:     inherit; // Operator
+  --highlight-cm:    #206f2b; // Comment.Multiline
+  --highlight-cp:    #206f2b; // Comment.Preproc
+  --highlight-c1:    #206f2b; // Comment.Single
+  --highlight-cs:    #206f2b; // Comment.Special
+  --highlight-gd:    #000; // Generic.Deleted
+  --highlight-gd-bg: #fdd; // Generic.Deleted
+  --highlight-gd-x:  #000; //Generic.Deleted.Specific
+  --highlight-gt-x-bg: #faa; // Generic.Deleted.Specific
+  --highlight-ge:    inherit; // Generic.Emph
+  --highlight-gr:    #a00; // Generic.Error
+  --highlight-gh:    #999; // Generic.Heading
+  --highlight-gi:    #000; // Generic.Inserted
+  --highlight-gi-bg: #dfd; // Generic.Inserted
+  --highlight-gi-x:  #000; // Generic.Inserted.Specific
+  --highlight-gt-x-bg: #afa; // Generic.Inserted.Specific
+  --highlight-go:    #888; // Generic.Output
+  --highlight-gp:    #555; // Generic.Prompt
+  --highlight-gs:    inherit; // Generic.Strong
+  --highlight-gu:    #aaa; // Generic.Subheading
+  --highlight-gt:    #a00; // Generic.Traceback
+  --highlight-kc:    inherit; // Keyword.Constant
+  --highlight-kd:    inherit; // Keyword.Declaration
+  --highlight-kp:    inherit; // Keyword.Pseudo
+  --highlight-kr:    inherit; // Keyword.Reserved
+  --highlight-kt:    #458; // Keyword.Type
+  --highlight-m:     #099; // Literal.Number
+  --highlight-s:     #d14; // Literal.String
+  --highlight-na:    #008080; // Name.Attribute
+  --highlight-nb:    #0086b3; // Name.Builtin
+  --highlight-nc:    #458; // Name.Class
+  --highlight-no:    #008080; // Name.Constant
+  --highlight-ni:    #800080; // Name.Entity
+  --highlight-ne:    #900; // Name.Exception
+  --highlight-nf:    #900; // Name.Function
+  --highlight-nn:    #555; // Name.Namespace
+  --highlight-nt:    #000080; // Name.Tag
+  --highlight-nv:    #008080; // Name.Variable
+  --highlight-ow:    inherit; // Operator.Word
+  --highlight-w:     #bbb; // Text.Whitespace
+  --highlight-mf:    #099; // Literal.Number.Float
+  --highlight-mh:    #099; // Literal.Number.Hex
+  --highlight-mi:    #099; // Literal.Number.Integer
+  --highlight-mo:    #099; // Literal.Number.Oct
+  --highlight-sb:    #d14; // Literal.String.Backtick
+  --highlight-sc:    #d14; // Literal.String.Char
+  --highlight-sd:    #d14; // Literal.String.Doc
+  --highlight-s2:    #d14; // Literal.String.Double
+  --highlight-se:    #d14; // Literal.String.Escape
+  --highlight-sh:    #d14; // Literal.String.Heredoc
+  --highlight-si:    #d14; // Literal.String.Interpol
+  --highlight-sx:    #d14; // Literal.String.Other
+  --highlight-sr:    #009926; // Literal.String.Regex
+  --highlight-s1:    #d14; // Literal.String.Single
+  --highlight-ss:    #990073; // Literal.String.Symbol
+  --highlight-bp:    #999; // Name.Builtin.Pseudo
+  --highlight-vc:    #008080; // Name.Variable.Class
+  --highlight-vg:    #008080; // Name.Variable.Global
+  --highlight-vi:    #008080; // Name.Variable.Instance
+  --highlight-il:    #099; // Literal.Number.Integer.Long
+}
+
+@media (prefers-color-scheme: dark) {
+  :where(html):not([data-color-scheme]){
+    // Base Colors for Dark Mode
+    --background-color: #262626;
+    --text-color: #ffffff;
+    --title-text-color: #ffffff;
+
+    --header-background-color: #161616;
+    --nav-background-color: #161616;
+    --footer-background-color: #161616;
+    --code-background-color: #161616;
+    --border-color-01: #161616;
+    --border-color-02: #161616;
+    --border-color-03: #161616;
+
+    --table-background-color: #262626;
+    --table-border-color: #161616;
+    --table-header-background-color: #161616;
+    --table-header-border-color: #161616;
+    --table-text-color: #ffffff;
+    --table-zebra-color: #161616;
+
+    --link-color: #78a9ff;
+    --link-active-color: #78a9ff;
+    --link-hover-color: #78a9ff;
+    --link-visited-color: #78a9ff;
+
+    // Highlight Colors for Dark Mode
+    --highlight-c:     #545454; // Comment
+    --highlight-err:   #f07178; // Error
+    --highlight-err-bg: #e3d2d2; // Error
+    --highlight-k:     #89ddff; // Keyword
+    --highlight-o:     inherit; // Operator
+    --highlight-cm:    #27e590; // Comment.Multiline
+    --highlight-cp:    #27e590; // Comment.Preproc
+    --highlight-c1:    #27e590; // Comment.Single
+    --highlight-cs:    #27e590; // Comment.Special
+    --highlight-gd:    #000; // Generic.Deleted
+    --highlight-gd-bg: #fdd; // Generic.Deleted
+    --highlight-gd-x:  #000; //Generic.Deleted.Specific
+    --highlight-gt-x-bg: #faa; // Generic.Deleted.Specific
+    --highlight-ge:    inherit; // Generic.Emph
+    --highlight-gr:    #f07178; // Generic.Error
+    --highlight-gh:    #999; // Generic.Heading
+    --highlight-gi:    #000; // Generic.Inserted
+    --highlight-gi-bg: #dfd; // Generic.Inserted
+    --highlight-gi-x:  #000; // Generic.Inserted.Specific
+    --highlight-gt-x-bg: #afa; // Generic.Inserted.Specific
+    --highlight-go:    #888; // Generic.Output
+    --highlight-gp:    #555; // Generic.Prompt
+    --highlight-gs:    inherit; // Generic.Strong
+    --highlight-gu:    #aaa; // Generic.Subheading
+    --highlight-gt:    #f07178; // Generic.Traceback
+    --highlight-kc:    inherit; // Keyword.Constant
+    --highlight-kd:    inherit; // Keyword.Declaration
+    --highlight-kp:    inherit; // Keyword.Pseudo
+    --highlight-kr:    inherit; // Keyword.Reserved
+    --highlight-kt:    #ffcb6b; // Keyword.Type
+    --highlight-m:     #f78c6c; // Literal.Number
+    --highlight-s:     #c3e88d; // Literal.String
+    --highlight-na:    #008080; // Name.Attribute
+    --highlight-nb:    #eeffff; // Name.Builtin
+    --highlight-nc:    #ffcb6b; // Name.Class
+    --highlight-no:    #008080; // Name.Constant
+    --highlight-ni:    #800080; // Name.Entity
+    --highlight-ne:    #900; // Name.Exception
+    --highlight-nf:    #82aaff; // Name.Function
+    --highlight-nn:    #555; // Name.Namespace
+    --highlight-nt:    #ffcb6b; // Name.Tag
+    --highlight-nv:    #eeffff; // Name.Variable
+    --highlight-ow:    inherit; // Operator.Word
+    --highlight-w:     #eeffff; // Text.Whitespace
+    --highlight-mf:    #f78c6c; // Literal.Number.Float
+    --highlight-mh:    #f78c6c; // Literal.Number.Hex
+    --highlight-mi:    #f78c6c; // Literal.Number.Integer
+    --highlight-mo:    #f78c6c; // Literal.Number.Oct
+    --highlight-sb:    #c3e88d; // Literal.String.Backtick
+    --highlight-sc:    #c3e88d; // Literal.String.Char
+    --highlight-sd:    #c3e88d; // Literal.String.Doc
+    --highlight-s2:    #c3e88d; // Literal.String.Double
+    --highlight-se:    #eeffff; // Literal.String.Escape
+    --highlight-sh:    #c3e88d; // Literal.String.Heredoc
+    --highlight-si:    #c3e88d; // Literal.String.Interpol
+    --highlight-sx:    #c3e88d; // Literal.String.Other
+    --highlight-sr:    #c3e88d; // Literal.String.Regex
+    --highlight-s1:    #c3e88d; // Literal.String.Single
+    --highlight-ss:    #c3e88d; // Literal.String.Symbol
+    --highlight-bp:    #999; // Name.Builtin.Pseudo
+    --highlight-vc:    #ffcb6b; // Name.Variable.Class
+    --highlight-vg:    #eeffff; // Name.Variable.Global
+    --highlight-vi:    #eeffff; // Name.Variable.Instance
+    --highlight-il:    #f78c6c; // Literal.Number.Integer.Long
+  }
+}
+
+:where(html)[data-color-scheme=dark]{
+  // Base Colors for Dark Mode
+  --background-color: #262626;
+  --text-color: #ffffff;
+  --title-text-color: #ffffff;
+
+  --header-background-color: #161616;
+  --nav-background-color: #161616;
+  --footer-background-color: #161616;
+  --code-background-color: #161616;
+  --border-color-01: #161616;
+  --border-color-02: #161616;
+  --border-color-03: #161616;
+
+  --table-background-color: #262626;
+  --table-border-color: #161616;
+  --table-header-background-color: #161616;
+  --table-header-border-color: #161616;
+  --table-text-color: #ffffff;
+  --table-zebra-color: #161616;
+
+  --link-color: #78a9ff;
+  --link-active-color: #78a9ff;
+  --link-hover-color: #78a9ff;
+  --link-visited-color: #78a9ff;
+
+  // Highlight Colors for Dark Mode
+  --highlight-c:     #545454; // Comment
+  --highlight-err:   #f07178; // Error
+  --highlight-err-bg: #e3d2d2; // Error
+  --highlight-k:     #89ddff; // Keyword
+  --highlight-o:     inherit; // Operator
+  --highlight-cm:    #27e590; // Comment.Multiline
+  --highlight-cp:    #27e590; // Comment.Preproc
+  --highlight-c1:    #27e590; // Comment.Single
+  --highlight-cs:    #27e590; // Comment.Special
+  --highlight-gd:    #000; // Generic.Deleted
+  --highlight-gd-bg: #fdd; // Generic.Deleted
+  --highlight-gd-x:  #000; //Generic.Deleted.Specific
+  --highlight-gt-x-bg: #faa; // Generic.Deleted.Specific
+  --highlight-ge:    inherit; // Generic.Emph
+  --highlight-gr:    #f07178; // Generic.Error
+  --highlight-gh:    #999; // Generic.Heading
+  --highlight-gi:    #000; // Generic.Inserted
+  --highlight-gi-bg: #dfd; // Generic.Inserted
+  --highlight-gi-x:  #000; // Generic.Inserted.Specific
+  --highlight-gt-x-bg: #afa; // Generic.Inserted.Specific
+  --highlight-go:    #888; // Generic.Output
+  --highlight-gp:    #555; // Generic.Prompt
+  --highlight-gs:    inherit; // Generic.Strong
+  --highlight-gu:    #aaa; // Generic.Subheading
+  --highlight-gt:    #f07178; // Generic.Traceback
+  --highlight-kc:    inherit; // Keyword.Constant
+  --highlight-kd:    inherit; // Keyword.Declaration
+  --highlight-kp:    inherit; // Keyword.Pseudo
+  --highlight-kr:    inherit; // Keyword.Reserved
+  --highlight-kt:    #ffcb6b; // Keyword.Type
+  --highlight-m:     #f78c6c; // Literal.Number
+  --highlight-s:     #c3e88d; // Literal.String
+  --highlight-na:    #008080; // Name.Attribute
+  --highlight-nb:    #eeffff; // Name.Builtin
+  --highlight-nc:    #ffcb6b; // Name.Class
+  --highlight-no:    #008080; // Name.Constant
+  --highlight-ni:    #800080; // Name.Entity
+  --highlight-ne:    #900; // Name.Exception
+  --highlight-nf:    #82aaff; // Name.Function
+  --highlight-nn:    #555; // Name.Namespace
+  --highlight-nt:    #ffcb6b; // Name.Tag
+  --highlight-nv:    #eeffff; // Name.Variable
+  --highlight-ow:    inherit; // Operator.Word
+  --highlight-w:     #eeffff; // Text.Whitespace
+  --highlight-mf:    #f78c6c; // Literal.Number.Float
+  --highlight-mh:    #f78c6c; // Literal.Number.Hex
+  --highlight-mi:    #f78c6c; // Literal.Number.Integer
+  --highlight-mo:    #f78c6c; // Literal.Number.Oct
+  --highlight-sb:    #c3e88d; // Literal.String.Backtick
+  --highlight-sc:    #c3e88d; // Literal.String.Char
+  --highlight-sd:    #c3e88d; // Literal.String.Doc
+  --highlight-s2:    #c3e88d; // Literal.String.Double
+  --highlight-se:    #eeffff; // Literal.String.Escape
+  --highlight-sh:    #c3e88d; // Literal.String.Heredoc
+  --highlight-si:    #c3e88d; // Literal.String.Interpol
+  --highlight-sx:    #c3e88d; // Literal.String.Other
+  --highlight-sr:    #c3e88d; // Literal.String.Regex
+  --highlight-s1:    #c3e88d; // Literal.String.Single
+  --highlight-ss:    #c3e88d; // Literal.String.Symbol
+  --highlight-bp:    #999; // Name.Builtin.Pseudo
+  --highlight-vc:    #ffcb6b; // Name.Variable.Class
+  --highlight-vg:    #eeffff; // Name.Variable.Global
+  --highlight-vi:    #eeffff; // Name.Variable.Instance
+  --highlight-il:    #f78c6c; // Literal.Number.Integer.Long
+}
+
+@mixin current-mode($value) {
+  @if $value == "dark" {
+    .light {
+      display: none;
+    }
+    .dark {
+      display: block;
+    }
+  } @else {
+    .light {
+      display: block;
+    }
+    .dark {
+      display: none;
+    }
+  }
+}

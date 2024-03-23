@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+
+  <body>
+    <div class="flexWrapper">
+      {%- include header.html -%}
+
+      <div class="content">
+        <main class="main" aria-label="Content">
+            {{- content -}}
+        </main>
+      </div>
+
+      {%- include footer.html -%}
+    </div>
+
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{%- if page.title -%}
+<title>{{ site.title }} | {{ page.title }}</title>
+{%- else -%}
+<title>{{ site.title }}</title>
+{%- endif -%}
+
+{%- if site.favicon -%}
+  <link rel="icon" href="{{ site.favicon | relative_url }}">
+{%- endif -%}
+
+{%- if site.favicon_svg -%}
+  <link rel="icon" type="image/svg+xml" href="{{ site.favicon_svg | relative_url }}">
+{%- endif -%}
+
+{%- if site.apple_touch_icon -%}
+  <link rel="apple-touch-icon" href="{{ site.apple_touch_icon | relative_url }}">
+{%- endif -%}

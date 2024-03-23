@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+// Code Highlighting
+.highlight {
+  .c     { color: var(--highlight-c); font-style: italic } // Comment
+  .err   { color: var(--highlight-err); background-color: var(--highlight-err-bg) } // Error
+  .k     { color: var(--highlight-k); font-weight: bold } // Keyword
+  .o     { color: var(--highlight-o); font-weight: bold } // Operator
+  .cm    { color: var(--highlight-cm); font-style: italic } // Comment.Multiline
+  .cp    { color: var(--highlight-cp); font-weight: bold } // Comment.Preproc
+  .c1    { color: var(--highlight-c1); font-style: italic } // Comment.Single
+  .cs    { color: var(--highlight-cs); font-weight: bold; font-style: italic } // Comment.Special
+  .gd    { color: var(--highlight-gd); background-color: var(--highlight-gd-bg) } // Generic.Deleted
+  .gd .x { color: var(--highlight-gd-x); background-color: var(--highlight-gd-x-bg) } // Generic.Deleted.Specific
+  .ge    { color: var(--highlight-ge); font-style: italic } // Generic.Emph
+  .gr    { color: var(--highlight-gr) } // Generic.Error
+  .gh    { color: var(--highlight-gh) } // Generic.Heading
+  .gi    { color: var(--highlight-gi); background-color: var(--highlight-gi-bg) } // Generic.Inserted
+  .gi .x { color: var(--highlight-gi-x); background-color: var(--highlight-gi-x-bg) } // Generic.Inserted.Specific
+  .go    { color: var(--highlight-go) } // Generic.Output
+  .gp    { color: var(--highlight-gp) } // Generic.Prompt
+  .gs    { color: var(--highlight-gs); font-weight: bold } // Generic.Strong
+  .gu    { color: var(--highlight-gu) } // Generic.Subheading
+  .gt    { color: var(--highlight-gt) } // Generic.Traceback
+  .kc    { color: var(--highlight-kc); font-weight: bold } // Keyword.Constant
+  .kd    { color: var(--highlight-kd); font-weight: bold } // Keyword.Declaration
+  .kp    { color: var(--highlight-kp); font-weight: bold } // Keyword.Pseudo
+  .kr    { color: var(--highlight-kr); font-weight: bold } // Keyword.Reserved
+  .kt    { color: var(--highlight-kt); font-weight: bold } // Keyword.Type
+  .m     { color: var(--highlight-m); } // Literal.Number
+  .s     { color: var(--highlight-s) } // Literal.String
+  .na    { color: var(--highlight-na) } // Name.Attribute
+  .nb    { color: var(--highlight-nb) } // Name.Builtin
+  .nc    { color: var(--highlight-nc); font-weight: bold } // Name.Class
+  .no    { color: var(--highlight-no) } // Name.Constant
+  .ni    { color: var(--highlight-ni); } // Name.Entity
+  .ne    { color: var(--highlight-ne); font-weight: bold } // Name.Exception
+  .nf    { color: var(--highlight-nf); font-weight: bold } // Name.Function
+  .nn    { color: var(--highlight-nn); } // Name.Namespace
+  .nt    { color: var(--highlight-nt) } // Name.Tag
+  .nv    { color: var(--highlight-nv) } // Name.Variable
+  .ow    { color: var(--highlight-ow); font-weight: bold } // Operator.Word
+  .w     { color: var(--highlight-w) } // Text.Whitespace
+  .mf    { color: var(--highlight-mf) } // Literal.Number.Float
+  .mh    { color: var(--highlight-mh) } // Literal.Number.Hex
+  .mi    { color: var(--highlight-mi) } // Literal.Number.Integer
+  .mo    { color: var(--highlight-mo) } // Literal.Number.Oct
+  .sb    { color: var(--highlight-sb) } // Literal.String.Backtick
+  .sc    { color: var(--highlight-sc) } // Literal.String.Char
+  .sd    { color: var(--highlight-sd) } // Literal.String.Doc
+  .s2    { color: var(--highlight-s2) } // Literal.String.Double
+  .se    { color: var(--highlight-se) } // Literal.String.Escape
+  .sh    { color: var(--highlight-sh) } // Literal.String.Heredoc
+  .si    { color: var(--highlight-si) } // Literal.String.Interpol
+  .sx    { color: var(--highlight-sx) } // Literal.String.Other
+  .sr    { color: var(--highlight-sr) } // Literal.String.Regex
+  .s1    { color: var(--highlight-s1) } // Literal.String.Single
+  .ss    { color: var(--highlight-ss) } // Literal.String.Symbol
+  .bp    { color: var(--highlight-bp) } // Name.Builtin.Pseudo
+  .vc    { color: var(--highlight-vc) } // Name.Variable.Class
+  .vg    { color: var(--highlight-vg) } // Name.Variable.Global
+  .vi    { color: var(--highlight-vi) } // Name.Variable.Instance
+  .il    { color: var(--highlight-il) } // Literal.Number.Integer.Long
+}

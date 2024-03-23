@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+// Layout: Post
+.postInfo {
+  margin: 1rem 0 1rem 0;
+}
+
+.postDate {
+  color: var(--text-color);
+}
+
+.postsEntries .postDate {
+  float: right;
+}
+
+.postTitle {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: $header-font-family;
+  font-size: 1.2em;
+  font-weight: 400;
+  float: left;
+  width: 75%;
+  margin: 0 0 1rem 0;
+}
+
+.postHeader {
+  overflow: hidden;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-family;
+  }
+}
+
+.postsList {
+  margin-top: 20px;
+}
+
+.postListItem {
+  padding: 20px;
+  background-color: var(--background-color);
+  margin-bottom: 20px;
+}
+
+.postListLink:hover {
+  text-decoration: none;
+}
+
+.postExcerpt {
+  text-align: initial;
+  text-decoration: none;
+  color: var(--text-color);
+  clear: both;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.noDecoration {
+  text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
