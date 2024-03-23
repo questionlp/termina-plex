@@ -21,12 +21,17 @@ body {
   width: 1px;
 }
 
+.clear {
+  clear: both;
+}
+
 .pagination {
-  padding: $spacingUnit 0 $spacingUnit * 0.75 0;
+  padding: $spacingUnit * 0.25 0 $spacingUnit * 0.75 0;
   text-align: center;
 
   .paginationPages {
     clear: both;
+    padding-inline-start: 0;
 
     li {
       list-style-type: none;

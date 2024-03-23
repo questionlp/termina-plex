@@ -12,7 +12,7 @@ description: >
 permalink: pretty
 
 # Pagination
-paginate: 4
+paginate: 10
 paginate_path: "/blog/page:num"
 
 # If you clone the Termina Plex repo and build locally, use this setting.
@@ -33,7 +33,7 @@ kramdown:
 # Theme-specific settings
 
 # Set to `true` to show excerpts on the homepage.
-show_excerpts: true
+show_excerpts: false
 
 # Termina Plex specific settings
 termina-plex:

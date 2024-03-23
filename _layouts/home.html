@@ -38,33 +38,32 @@ layout: base
   </div>
   {%- endif -%}
 </article>
+<div class="clear"></div>
 
-{% if site.paginate %}
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    <ul class="paginationPages">
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <li>
-          <div>
-            <span>{{ page }}</span>
-          </div>
-        </li>
-      {% elsif page == 1 %}
-        <li>
-          <div class="pageLinkActive">
-            <a href="{{ '/blog' | relative_url }}">{{ page }}</a>
-          </div>
-        </li>
-      {% else %}
-        <li>
-          <div class="pageLinkActive">
-            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-          </div>
-        </li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+{% if site.paginate and paginator.total_pages > 1 %}
+<div class="pagination">
+  <ul class="paginationPages">
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li>
+        <div>
+          <span>{{ page }}</span>
+        </div>
+      </li>
+    {% elsif page == 1 %}
+      <li>
+        <div class="pageLinkActive">
+          <a href="{{ '/blog' | relative_url }}">{{ page }}</a>
+        </div>
+      </li>
+    {% else %}
+      <li>
+        <div class="pageLinkActive">
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+        </div>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
 {%- endif %}
