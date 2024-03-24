@@ -48,6 +48,20 @@ The links displayed in the header of the page are defined in the `termina-plex.h
 
 The social links displayed under the site title in the main section of the landing page are defined by the `termina-plex.social_links` setting. Each link is defined as an object with a `name` and `url` key. An optional `rel` key is available if link-based validation is required by applications like Mastodon. As with the header link names, the link names will also be transformed to lowercase via CSS.
 
+## Screenshots
+
+![Screenshot of the Termina Plex theme for Jekyll showing the landing page in dark mode](/screenshots/termina-plex-01-landing-page-dark.png)
+
+![Screenshot of the Termina Plex theme for Jekyll showing the landing page in light mode](/screenshots/termina-plex-02-landing-page-light.png)
+
+![Screenshot of the Termina Plex theme for Jekyll showing a listing blog posts in dark mode](/screenshots/termina-plex-03-blog-post-listing-dark.png)
+
+![Screenshot of the Termina Plex theme for Jekyll showing a listing blog posts in light mode](/screenshots/termina-plex-04-blog-post-listing-light.png)
+
+![Screenshot of the Termina Plex theme for Jekyll showing a blog post in dark mode](/screenshots/termina-plex-05-blog-post-dark.png)
+
+![Screenshot of the Termina Plex theme for Jekyll showing a blog post in light mode](/screenshots/termina-plex-06-blog-post-light.png)
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
