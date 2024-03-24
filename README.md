@@ -8,7 +8,13 @@ By the default, the theme respects the `prefers-color-scheme` value provided by 
 
 ## Installation
 
-Add this line to your Jekyll site's Gemfile:
+Add this line to your Jekyll site's Gemfile to install:
+
+```ruby
+gem "termina-plex"
+```
+
+To install the theme from GitHub, add this line to your Jekyll site's Gemfile:
 
 ```ruby
 gem "termina-plex", git: "https://github.com/questionlp/termina-plex.git"
