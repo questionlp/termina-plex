@@ -53,6 +53,12 @@
   text-decoration: none;
 }
 
+.terminal {
+  .terminalUser, .terminalAt, .terminalHost, .terminalPath {
+    color: var(--link-color);
+  }
+}
+
 .hamb {
   cursor: pointer;
   float: right;

@@ -41,9 +41,12 @@
 body div.content {
 
   a:link,
-  a:active,
-  a:visited {
+  a:active {
     color: var(--link-color);
+  }
+
+  a:visited {
+    color: var(--link-visited-color);
   }
 }
 

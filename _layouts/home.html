@@ -7,6 +7,7 @@ layout: base
     {%- assign posts = site.posts -%}
 {% endif %}
 {%- assign date_format = site.termina-plex.date_format | default: "%d %b %Y" -%}
+{%- assign blog_path = site.blog_path | default: "/blog" %}
 
 <article class="postWrapper">
   <header class="postHeader">
@@ -53,7 +54,7 @@ layout: base
     {% elsif page == 1 %}
       <li>
         <div class="pageLinkActive">
-          <a href="{{ '/blog' | relative_url }}">{{ page }}</a>
+          <a href="{{ blog_path | relative_url }}">{{ page }}</a>
         </div>
       </li>
     {% else %}
