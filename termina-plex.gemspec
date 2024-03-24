@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name     = "termina-plex"
-  spec.version  = "0.1.5"
-  spec.authors  = ["Linh Pham", "Matúš Námešný", "Joel Glovier"]
-  spec.email    = ["hello@linh.social", "jglovier@github.com"]
+  spec.version  = "0.1.5.post1"
+  spec.authors  = ["Linh Pham"]
+  spec.email    = ["hello@linh.social"]
 
   spec.summary  = "Jekyll theme based on Minima with inspirations from the Hugo theme Nightfall."
   spec.homepage = "https://github.com/questionlp/termina-plex"
