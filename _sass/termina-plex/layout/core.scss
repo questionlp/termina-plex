@@ -11,6 +11,35 @@ body {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  font-weight: 600;
+}
+
+b, strong, th {
+  font-weight: 600 !important;
+}
+
+article {
+  font-size: #{$base-font-size};
+}
+
+tt, code, kbd, samp {
+  font-family: #{$code-font-family};
+}
+
+table {
+  border-collapse: collapse;
+  padding: initial;
+  margin: 0 0 $spacingUnit * 0.875 0;
+}
+
+th, tr, td {
+  border: 1px solid rgba(127, 127, 127, 0.5);
+  padding: $spacingUnit * 0.25 $spacingUnit * 0.375;
+  margin: initial;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);

@@ -4,12 +4,12 @@
 .highlight {
   .c     { color: var(--highlight-c); font-style: italic } // Comment
   .err   { color: var(--highlight-err); background-color: var(--highlight-err-bg) } // Error
-  .k     { color: var(--highlight-k); font-weight: bold } // Keyword
-  .o     { color: var(--highlight-o); font-weight: bold } // Operator
+  .k     { color: var(--highlight-k); font-weight: 600 } // Keyword
+  .o     { color: var(--highlight-o); font-weight: 600 } // Operator
   .cm    { color: var(--highlight-cm); font-style: italic } // Comment.Multiline
-  .cp    { color: var(--highlight-cp); font-weight: bold } // Comment.Preproc
+  .cp    { color: var(--highlight-cp); font-weight: 600 } // Comment.Preproc
   .c1    { color: var(--highlight-c1); font-style: italic } // Comment.Single
-  .cs    { color: var(--highlight-cs); font-weight: bold; font-style: italic } // Comment.Special
+  .cs    { color: var(--highlight-cs); font-weight: 600; font-style: italic } // Comment.Special
   .gd    { color: var(--highlight-gd); background-color: var(--highlight-gd-bg) } // Generic.Deleted
   .gd .x { color: var(--highlight-gd-x); background-color: var(--highlight-gd-x-bg) } // Generic.Deleted.Specific
   .ge    { color: var(--highlight-ge); font-style: italic } // Generic.Emph
@@ -19,27 +19,27 @@
   .gi .x { color: var(--highlight-gi-x); background-color: var(--highlight-gi-x-bg) } // Generic.Inserted.Specific
   .go    { color: var(--highlight-go) } // Generic.Output
   .gp    { color: var(--highlight-gp) } // Generic.Prompt
-  .gs    { color: var(--highlight-gs); font-weight: bold } // Generic.Strong
+  .gs    { color: var(--highlight-gs); font-weight: 600 } // Generic.Strong
   .gu    { color: var(--highlight-gu) } // Generic.Subheading
   .gt    { color: var(--highlight-gt) } // Generic.Traceback
-  .kc    { color: var(--highlight-kc); font-weight: bold } // Keyword.Constant
-  .kd    { color: var(--highlight-kd); font-weight: bold } // Keyword.Declaration
-  .kp    { color: var(--highlight-kp); font-weight: bold } // Keyword.Pseudo
-  .kr    { color: var(--highlight-kr); font-weight: bold } // Keyword.Reserved
-  .kt    { color: var(--highlight-kt); font-weight: bold } // Keyword.Type
+  .kc    { color: var(--highlight-kc); font-weight: 600 } // Keyword.Constant
+  .kd    { color: var(--highlight-kd); font-weight: 600 } // Keyword.Declaration
+  .kp    { color: var(--highlight-kp); font-weight: 600 } // Keyword.Pseudo
+  .kr    { color: var(--highlight-kr); font-weight: 600 } // Keyword.Reserved
+  .kt    { color: var(--highlight-kt); font-weight: 600 } // Keyword.Type
   .m     { color: var(--highlight-m); } // Literal.Number
   .s     { color: var(--highlight-s) } // Literal.String
   .na    { color: var(--highlight-na) } // Name.Attribute
   .nb    { color: var(--highlight-nb) } // Name.Builtin
-  .nc    { color: var(--highlight-nc); font-weight: bold } // Name.Class
+  .nc    { color: var(--highlight-nc); font-weight: 600 } // Name.Class
   .no    { color: var(--highlight-no) } // Name.Constant
   .ni    { color: var(--highlight-ni); } // Name.Entity
-  .ne    { color: var(--highlight-ne); font-weight: bold } // Name.Exception
-  .nf    { color: var(--highlight-nf); font-weight: bold } // Name.Function
+  .ne    { color: var(--highlight-ne); font-weight: 600 } // Name.Exception
+  .nf    { color: var(--highlight-nf); font-weight: 600 } // Name.Function
   .nn    { color: var(--highlight-nn); } // Name.Namespace
   .nt    { color: var(--highlight-nt) } // Name.Tag
   .nv    { color: var(--highlight-nv) } // Name.Variable
-  .ow    { color: var(--highlight-ow); font-weight: bold } // Operator.Word
+  .ow    { color: var(--highlight-ow); font-weight: 600 } // Operator.Word
   .w     { color: var(--highlight-w) } // Text.Whitespace
   .mf    { color: var(--highlight-mf) } // Literal.Number.Float
   .mh    { color: var(--highlight-mh) } // Literal.Number.Hex
