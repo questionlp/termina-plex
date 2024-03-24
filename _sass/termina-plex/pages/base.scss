@@ -77,3 +77,10 @@ th, tr, td {
   padding: $spacingUnit * 0.25 $spacingUnit * 0.375;
   margin: initial;
 }
+
+.metaTag, .metaCategory {
+  display: inline-flex;
+  font-family: $header-font-family;
+  font-size: 1.2em;
+  padding: 0 $spacingUnit * 1.5 $spacingUnit * 0.5 0;
+}

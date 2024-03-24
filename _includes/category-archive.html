@@ -8,8 +8,6 @@
   {% assign catitems = tempcat | split: '#' %}
   {% capture catname %}{{ catitems[1] }}{% endcapture %}
   <div class="metaCategory">
-    <h2 class="postTitle">
       <a href="/category/{{ catname }}">{{ catname }}</a>
-    </h2>
   </div>
 {% endfor %}
