@@ -2,7 +2,7 @@
 
 Termina Plex is a [Jekyll](https://jekyllrb.com) theme that is a port of the [Nightfall](https://github.com/LordMathis/hugo-theme-nightfall) theme for [Hugo](https://gohugo.io), developed by [Matúš Námešný](https://namesny.com). This theme uses some of the foundational code provided by the [Minima](https://jekyll.github.io/minima/) theme for Jekyll.
 
-The theme is designed with a minimal default landing page and a separate page for listing available blog posts. It also features the [IBM Plex](https://ibm.com/plex) Sans and IBM Plex Mono typefaces throughout the design and includes the necessary web fonts in the theme bundle.
+The theme is designed with a minimal default landing page and a separate page for listing available blog posts. It also features the [IBM Plex](https://ibm.com/plex) Sans and IBM Plex Mono typefaces throughout the design and includes the necessary web font files in the theme bundle.
 
 By the default, the theme respects the `prefers-color-scheme` value provided by the browser. A color scheme toggle is included in the header that allows the viewer to switch between light and dark mode. Once toggled, the value is stored in the local storage using [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API).
 
@@ -45,3 +45,7 @@ The social links displayed under the site title in the main section of the landi
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Both the original Nightfall and the Minina themes are licensed under the terms of the MIT License.
+
+The included IBM Plex font files are licensed under the terms of the [SIL Open Font License, Version 1.1](https://github.com/IBM/plex/blob/master/LICENSE.txt).
