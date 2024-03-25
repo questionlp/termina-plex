@@ -11,19 +11,19 @@ layout: base
   <section class="postMetadata">
     <dl>
       {%- if page.author and page.author.size > 0 -%}
-      <dt>authors</dt>
+      <dt>Authors</dt>
       <dd>
         {{- page.author | join: ", " -}}
       </dd>
       {%- endif -%}
       {%- if page.date -%}
-      <dt>published</dt>
+      <dt>Published</dt>
       <dd>
         <time class="postDate" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: date_format }}</time>
       </dd>
       {%- endif -%}
       {%- if page.categories and page.categories.size > 0 -%}
-      <dt>categories</dt>
+      <dt>Categories</dt>
       <dd>
         {%- for category in page.categories -%}
           {%- capture category_name -%}{{ category }}{%- endcapture -%}
@@ -32,7 +32,7 @@ layout: base
       </dd>
       {%- endif -%}
       {%- if page.tags and page.tags.size > 0 -%}
-      <dt>tags</dt>
+      <dt>Tags</dt>
       <dd>
         {%- for tag in page.tags -%}
           {%- capture tag_name -%}{{ tag }}{%- endcapture -%}
