@@ -3,11 +3,11 @@
     <div>
       <a class="terminal" href="{{ '/' | relative_url }}">
         {%- if site.termina-plex.username and site.termina-plex.hostname -%}
-        <span class="terminalUser">{{ site.termina-plex.username }}</span><span class="terminalAt">@</span><span class="terminalHost">{{ site.termina-plex.hostname }}</span>:<span class="terminalPath">~</span>$</span>
+        <span class="terminalUser">{{ site.termina-plex.username }}</span><span class="terminalAt">@</span><span class="terminalHost">{{ site.termina-plex.hostname }}</span>:<span class="terminalPath">~</span><span class="terminalSeparator">$</span>
         {%- elsif site.termina-plex.username -%}
-        <span class="terminalUser">{{ site.termina-plex.username}}</span>:<span class="terminalPath">~</span>$</span>
+        <span class="terminalUser">{{ site.termina-plex.username}}</span>:<span class="terminalPath">~</span><span class="terminalSeparator">$</span>
         {%- elsif site.termina-plex.hostname -%}
-        <span class="terminalHost">{{ site.termina-plex.hostname }}</span>:<span class="terminalPath">~</span>$</span>
+        <span class="terminalHost">{{ site.termina-plex.hostname }}</span>:<span class="terminalPath">~</span><span class="terminalSeparator">$</span>
         {%- else %}
         <span>{{ site.title }}</span>
         {%- endif -%}

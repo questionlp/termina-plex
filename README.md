@@ -48,6 +48,8 @@ The links displayed in the header of the page are defined in the `termina-plex.h
 
 The social links displayed under the site title in the main section of the landing page are defined by the `termina-plex.social_links` setting. Each link is defined as an object with a `name` and `url` key. An optional `rel` key is available if link-based validation is required by applications like Mastodon. As with the header link names, the link names will also be transformed to lowercase via CSS.
 
+If centered tables are preferred, the `termina-plex.centered_tables` setting can be set to `true`. By default, it uses the user agent's default alignment.
+
 ## Screenshots
 
 ![Screenshot of the Termina Plex theme for Jekyll showing the landing page in dark mode](/screenshots/termina-plex-01-landing-page-dark.png)

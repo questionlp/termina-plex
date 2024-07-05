@@ -1,3 +1,7 @@
+{%- if site.termina-plex.centered_tables -%}
+<link rel="stylesheet" href="{{ '/assets/css/centered-table.css' | relative_url }}">
+{%- endif -%}
+
 {%- if page.title -%}
 <title>{{ site.title }} | {{ page.title }}</title>
 {%- else -%}

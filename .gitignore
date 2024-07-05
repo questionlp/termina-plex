@@ -1,3 +1,6 @@
+# Ignore rbenv Ruby version file
+.ruby-version
+
 # Test Draft Posts
 _drafts/
 
