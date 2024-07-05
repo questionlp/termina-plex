@@ -47,6 +47,16 @@
   text-decoration: none;
   color: var(--text-color);
   clear: both;
+
+  h2 {
+    font-size: 1.1rem !important;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.05rem !important;
+    font-weight: 500;
+  }
 }
 
 .headerContainer {
