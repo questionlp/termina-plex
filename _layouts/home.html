@@ -7,7 +7,8 @@ layout: base
     {%- assign posts = site.posts -%}
 {% endif %}
 {%- assign date_format = site.termina-plex.date_format | default: "%d %b %Y" -%}
-{%- assign blog_path = site.blog_path | default: "/blog" %}
+{%- assign blog_path = site.blog_path | default: "/blog" -%}
+{%- assign standard_titles = site.termina-plex.standard_titles -%}
 
 <article class="postWrapper">
   <header class="postHeader">
@@ -18,7 +19,11 @@ layout: base
   <div class="postsEntries">
     {%- for post in posts -%}
     <div class="postInfo">
+      {%- if standard_titles -%}
       <h2 class="postTitle">
+      {%- else -%}
+      <h2 class="postTitle capitalize-title">
+      {%- endif -%}
         <a class="postListLink" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </h2>
       {%- if post.date -%}

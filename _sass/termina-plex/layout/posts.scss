@@ -18,10 +18,13 @@
   font-family: $header-font-family;
   font-size: 1.2em;
   font-weight: 400;
-  text-transform: capitalize;
   float: left;
   width: 75%;
   margin: 0 0 1rem 0;
+}
+
+.postTitle.capitalize-title {
+  text-transform: capitalize;
 }
 
 .postHeader {

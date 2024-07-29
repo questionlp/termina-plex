@@ -40,6 +40,7 @@ termina-plex:
   date_format: "%d %b %Y"
   long_date_format: "%d %B %Y %H:%M:%S"
   centered_tables: false
+  standard_titles: false
 
   username: theme
   hostname: termina-plex

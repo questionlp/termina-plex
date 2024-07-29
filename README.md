@@ -50,6 +50,8 @@ The social links displayed under the site title in the main section of the landi
 
 If centered tables are preferred, the `termina-plex.centered_tables` setting can be set to `true`. By default, it uses the user agent's default alignment.
 
+By default, the theme will transform post titles to be capitalized on pages that use the `home` layout. If you prefer to have post titles not be transformed, you can set `termina-plex.standard_titles` to `true`.
+
 ## Screenshots
 
 ![Screenshot of the Termina Plex theme for Jekyll showing the landing page in dark mode](/screenshots/termina-plex-01-landing-page-dark.png)
