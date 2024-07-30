@@ -1,0 +1,16 @@
+{%- if site.umami_analytics.url and site.umami_analytics.data_website_id %}
+<script
+  defer
+  src="{{ site.umami_analytics.url }}"
+  data-website-id="{{ site.umami_analytics.data_website_id }}"
+  {%- if site.umami_analytics.data_host_url %}
+  data-host-url="{{ site.umami_analytics.data_host_url }}"
+  {%- endif -%}
+  {%- if site.umami_analytics.data_auto_track %}
+  data-auto-track="{{ site.umami_analytics.data_auto_track }}"
+  {%- endif -%}
+  {%- if site.umami_analytics.data_domains %}
+  data-domains="{{ site.umami_analytics.data_domains }}"
+  {%- endif -%}
+></script>
+{%- endif %}

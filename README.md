@@ -36,9 +36,43 @@ For pagination to work with the post listing page hosted under `/blog`, the `pag
 
 If you want to change the path for the post listing page, the `blog_path` setting can be set to the preferred path. The `paginate_path` setting should also be updated to reflect the correct path.
 
+## Google and Umami Analytics
+
+This theme provides support for Google and Umami Analytics by setting appropriate site configuration values.
+
+### Google Analytics
+
+To automatically add the necessary Google tag to the site, add the following line to the top level of `_config.yml`:
+
+```yaml
+google_analytics: G-XXXXX
+```
+
+Replace `G-XXXXX` with the appropriate measurement ID.
+
+### Umami Analytics
+
+To automatically add the necessary Umami analytics tag to the site, add the following lines to the top level of `_config.yml`:
+
+```yaml
+umami_analytics:
+  url: "https://example.org/umami.js"
+  data_website_id: "abc"
+```
+
+Replace the `url` and `data_website_id` with the appropriate values for your Umami Analytics instance.
+
+Additional parameters can be set in the tag by providing the appropriate values for the following keys under `umami_analytics`:
+
+| Umami Tag Parameter | Site Configuration |
+| --- | --- |
+| data-host-url | data_host_url |
+| data-auto-track | data_auto_track |
+| data-domains | data_domains |
+
 ## Theme Configuration
 
-Theme specific configuration is done within the `termina-plex` section of the `_config.yaml` file.
+Theme specific configuration is done within the `termina-plex` section of the `_config.yml` file.
 
 The date format used by the theme is defined by the `termina-plex.date_format` setting. The value needs to be in [valid `strftime` format](https://docs.ruby-lang.org/en/master/strftime_formatting_rdoc.html). The theme defaults to `%d %b %Y`.
 

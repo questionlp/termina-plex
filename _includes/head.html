@@ -8,6 +8,9 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  {%- if site.umami_analytics.url and site.umami_analytics.data_website_id -%}
+    {%- include umami-analytics.html -%}
+  {%- endif -%}
 
-  {%- include custom-head.html -%}
+  {%- include custom-head.html %}
 </head>
