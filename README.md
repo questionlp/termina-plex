@@ -36,6 +36,10 @@ For pagination to work with the post listing page hosted under `/blog`, the `pag
 
 If you want to change the path for the post listing page, the `blog_path` setting can be set to the preferred path. The `paginate_path` setting should also be updated to reflect the correct path.
 
+## Index Page Author Pronouns
+
+Author pronouns set using the `site.author.pronouns` configuration setting and will be displayed below the author name on pages that use the `index` layout.
+
 ## Google and Umami Analytics
 
 This theme provides support for Google and Umami Analytics by setting appropriate site configuration values.

@@ -10,3 +10,16 @@
 .indexHeader {
   font-size: 3em;
 }
+
+.indexHeader .authorPronouns {
+  font-style: italic;
+  font-size: 50%;
+}
+
+.authorPronouns::before {
+  content: "("
+}
+
+.authorPronouns::after {
+  content: ")"
+}
