@@ -17,18 +17,18 @@ $widthLarge:       88%;
 $widthSmaller:     92%;
 $spacingUnit:      30px !default;
 
-@import "termina-plex/ibm-plex";
-@import "termina-plex/themes";
-@import "termina-plex/highlight";
+@use "termina-plex/ibm-plex";
+@use "termina-plex/themes";
+@use "termina-plex/highlight";
 
-@import "termina-plex/layout/core";
-@import "termina-plex/layout/header";
-@import "termina-plex/layout/footer";
-@import "termina-plex/layout/posts";
-@import "termina-plex/layout/social";
-@import "termina-plex/layout/toggle";
+@use "termina-plex/layout/core";
+@use "termina-plex/layout/header";
+@use "termina-plex/layout/footer";
+@use "termina-plex/layout/posts";
+@use "termina-plex/layout/social";
+@use "termina-plex/layout/toggle";
 
-@import "termina-plex/pages/base";
-@import "termina-plex/pages/index";
-@import "termina-plex/pages/list";
-@import "termina-plex/pages/single";
+@use "termina-plex/pages/base";
+@use "termina-plex/pages/index";
+@use "termina-plex/pages/list";
+@use "termina-plex/pages/single";
