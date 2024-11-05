@@ -2,6 +2,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if site.termina-plex.fediverse_creator %}
+  <meta name="fediverse:creator" content="{{ site.termina-plex.fediverse_creator }}">
+  {% endif %}
   {%- seo title=false -%}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {%- feed_meta -%}

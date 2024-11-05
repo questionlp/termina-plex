@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name     = "termina-plex"
-  spec.version  = "1.0.0-alpha"
+  spec.version  = "1.0.0-alpha.1"
   spec.authors  = ["Linh Pham"]
   spec.email    = ["hello@linh.social"]
 
