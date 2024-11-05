@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+$body-font-family: "IBM Plex Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+$code-font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$serif-font-family: "IBM Plex Serif", "Georgia", "Garamond", "Times New Roman", serif;
+$header-font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$breakLarge: 992px;
+$widthLarge: 88%;
+$widthSmaller: 92%;
+$spacingUnit: 30px !default;
+
+// Pages: Base
+.content {
+  text-align: center;
+  flex: 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  flex: 1 auto;
+
+}
+
+.main {
+  height: 100%;
+
+  @media only screen and (min-width: $breakLarge) {
+    width: $widthLarge;
+  }
+
+  @media screen and (max-width: $breakLarge) {
+    width: $widthSmaller;
+  }
+}
+
+body div.content {
+
+  a:link,
+  a:active {
+    color: var(--link-color);
+  }
+
+  a:visited {
+    color: var(--link-visited-color);
+  }
+}
+
+article header h1 {
+  font-size: 2rem;
+}
+
+.metaTag,
+.metaCategory {
+  display: inline-flex;
+  font-family: $header-font-family;
+  font-size: 1.2em;
+  padding: 0 $spacingUnit * 1.5 $spacingUnit * 0.5 0;
+}
+
+// Pages: Index
+.indexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.indexHeader {
+  font-size: 3em;
+}
+
+.indexHeader .authorPronouns {
+  font-style: italic;
+  font-size: 50%;
+}
+
+.authorPronouns::before {
+  content: "("
+}
+
+.authorPronouns::after {
+  content: ")"
+}
+
+// Pages: List
+.listHeader,
+.listContent {
+  text-align: left;
+}
+
+// Pages: Single
+.postWrapper {
+  text-align: left;
+  padding: $spacingUnit * 0.6667;
+}
+
+.postMetadata {
+  font-family: $code-font-family;
+  display: block;
+  background: var(--header-background-color);
+  padding: $spacingUnit * 0.6667;
+}
+
+dt,
+dd {
+  line-height: 1.5;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+dt {
+  grid-column-start: 1;
+  text-transform: lowercase;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+dt::after {
+  content: ":";
+}
+
+.highlight {
+  margin: 0;
+}
+
+.highlight pre {
+  background-color: var(--header-background-color);
+  margin: 0;
+  padding: $spacingUnit * 0.6667;
+  overflow-y: scroll;
+}
+
+.pageNavFooter {
+  border-top: 1px solid rgba(127, 127, 127, 0.5);
+  text-align: left;
+  margin-top: $spacingUnit * 1.5;
+  padding: $spacingUnit * 0.6667;
+}
+
+.pagePrevious,
+.pageNext {
+  width: 35%;
+  margin-bottom: $spacingUnit;
+}
+
+.pagePrevious {
+  float: left;
+}
+
+.pagePrevious a::before {
+  content: "\2190\00a0"
+}
+
+.pageNext {
+  float: right;
+  text-align: right;
+}
+
+.pageNext a::after {
+  content: "\00a0\2192"
+}
