@@ -121,13 +121,13 @@ td {
 .header {
   font-family: $header-font-family;
   padding: 0 20px;
-  height: 60px;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media only screen and (min-width: $breakLarge) {
-    width: $widthLarge * 0.8;
+    width: 82.5%;
   }
 
   @media screen and (max-width: $breakLarge) {
@@ -278,6 +278,12 @@ div#theme-toggle {
 // Layout: Post
 .postInfo {
   margin: 1rem 0 1rem 0;
+  padding: 2rem 0 1.25rem 0;
+  border-top: 1px solid rgba(127, 127, 127, 0.5);
+}
+
+.postInfo:last-of-type {
+  border-bottom: 1px solid rgba(127, 127, 127, 0.5);
 }
 
 .postDate {
