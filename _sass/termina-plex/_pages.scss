@@ -1,19 +1,6 @@
 @charset "utf-8";
 
-$body-font-family: "IBM Plex Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
-$code-font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
-$serif-font-family: "IBM Plex Serif", "Georgia", "Garamond", "Times New Roman", serif;
-$header-font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
-
-$base-font-size: 16px !default;
-$base-font-weight: 400 !default;
-$small-font-size: $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
-
-$breakLarge: 992px;
-$widthLarge: 88%;
-$widthSmaller: 92%;
-$spacingUnit: 30px !default;
+@use "variables" as *;
 
 // Pages: Base
 .content {

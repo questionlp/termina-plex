@@ -14,3 +14,7 @@ gem "bigdecimal", "~> 3.1.4"
 gem "safe_yaml", "~> 1.0.5"
 gem "base64", "~> 0.2.0"
 gem "csv", "~> 3.3"
+
+# Add gems that will no longer be included in Ruby >= 3.5.0
+gem "logger", "~> 1.6"
+gem 'ostruct', '~> 0.6.0'
