@@ -276,10 +276,15 @@ div#theme-toggle {
 }
 
 // Layout: Post
-.postInfo {
-  margin: 1rem 0 1rem 0;
-  padding: 2rem 0 1.25rem 0;
+.postsEntries .postInfo, .tagsEntries .postInfo {
+  margin: 2rem 0;
+  min-height: 2rem;
+  padding: 2rem 0;
   border-top: 1px solid rgba(127, 127, 127, 0.5);
+}
+
+.postsEntries .postInfo {
+  padding-bottom: 1rem;
 }
 
 .postInfo:last-of-type {
@@ -290,7 +295,7 @@ div#theme-toggle {
   color: var(--text-color);
 }
 
-.postsEntries .postDate {
+.postsEntries .postDate, .tagsEntries .postDate {
   float: right;
 }
 

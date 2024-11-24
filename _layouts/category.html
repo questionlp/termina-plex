@@ -8,7 +8,7 @@ layout: base
     <h1>Category: {{ page.category }}</h1>
   </header>
 
-  <div class="postsEntries">
+  <div class="tagsEntries">
   {%- if site.categories[page.category] -%}
     {%- for post in site.categories[page.category] %}
     <div class="postInfo">

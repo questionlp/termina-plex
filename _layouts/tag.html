@@ -8,7 +8,7 @@ layout: base
     <h1>Tag: {{ page.tag }}</h1>
   </header>
 
-  <div class="postsEntries">
+  <div class="tagsEntries">
   {%- if site.tags[page.tag] -%}
     {%- for post in site.tags[page.tag] %}
     <div class="postInfo">
