@@ -284,12 +284,16 @@ div#theme-toggle {
 }
 
 .postsEntries .postInfo {
-  padding-bottom: 1rem;
+  padding-bottom: 0;
 }
 
 .postInfo:last-of-type {
   border-bottom: 1px solid rgba(127, 127, 127, 0.5);
   padding-bottom: 2rem;
+}
+
+.postsEntries .postInfo:last-of-type {
+  padding-bottom: 1rem;
 }
 
 .postDate {

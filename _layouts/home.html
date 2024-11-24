@@ -32,12 +32,13 @@ layout: base
       {%- if site.show_excerpts -%}
       <div class="postExcerpt">
         {{ post.excerpt }}
-      </div>
+
         {%- if post.content.size > post.excerpt.size -%}
-        <div>
+        <p>
           <a href="{{ post.url | relative_url }}">(Read more...)</a>
-        </div>
+        </p>
         {%- endif -%}
+      </div>
       {%- endif -%}
     </div>
     {%- endfor -%}
