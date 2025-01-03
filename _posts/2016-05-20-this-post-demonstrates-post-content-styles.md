@@ -86,6 +86,15 @@ In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla e
 3. Third item, what what?!
 4. Fourth item, fo sheezy my neezy
 
+### Oh hai, definition lists!!
+
+Item 1
+: First item of a definition list
+: Pretty cool, right?
+
+Item 2
+: Second item, no less worse than the first
+
 ## Headings are cool! (h2)
 
 Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
